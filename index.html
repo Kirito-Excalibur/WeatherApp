@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <input placeholder="Search" id="search" type="text" />
+        <button id="search_button"><i class="fa fa-search"></i></button>
+        <div class="weather loading">
+          <h2 id="CityName">Denver</h2>
+          <div id="temp">50°</div>
+          <div style="display: flex; align-items: center">
+            <img
+              id="icon"
+              src="https://openweathermap.org/img/wn/02n@2x.png"
+              alt=""
+            />
+            <div id="description">Cloudy</div>
+          </div>
+          <div id="humidity">Humidity:60°</div>
+          <div id="windspeed">Wind Speed:6.2 Km/h</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/1c47ebb6f6.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

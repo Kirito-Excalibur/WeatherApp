@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-style: bold;
+  font-size: 25px;
+}
+
+.card {
+  height: 400px;
+  width: 600px;
+  background: #c6ffdd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+#search {
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 18px;
+  background: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  transform: translateY(40%);
+  min-width: 300px;
+}
+#search_button {
+  padding: 10px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 1.6rem;
+}
+
+#search_button:hover {
+  cursor: pointer;
+}
+body {
+  background: url("https://images.unsplash.com/photo-1517928260182-5688aead3066?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 765px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.weather.loading {
+  visibility: hidden;
+}
+
+.weather.loading::after {
+  visibility: visible;
+  content: "Loading...";
+  color: black;
+}
